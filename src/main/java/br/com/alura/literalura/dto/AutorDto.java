@@ -9,7 +9,6 @@ public class AutorDto {
     public AutorDto() {
     }
 
-    // Getters e setters
 
     public String getName() {
         return name;

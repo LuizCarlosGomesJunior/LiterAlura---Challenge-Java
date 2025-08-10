@@ -25,7 +25,6 @@ public class LivroDto {
     public LivroDto() {
     }
 
-    // Getters e setters
 
     public Long getId() {
         return id;

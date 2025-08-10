@@ -33,7 +33,6 @@ public class Livro {
         this.autor = autor;
     }
 
-    // Getters e Setters
 
     public Long getId() {
         return id;

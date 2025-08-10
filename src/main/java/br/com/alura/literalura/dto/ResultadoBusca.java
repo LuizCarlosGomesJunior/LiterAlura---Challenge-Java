@@ -12,8 +12,6 @@ public class ResultadoBusca {
     public ResultadoBusca() {
     }
 
-    // Getters e setters
-
     public Integer getCount() {
         return count;
     }

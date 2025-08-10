@@ -32,7 +32,7 @@ public class Autor {
         this.anoFalecimento = anoFalecimento;
     }
 
-    // Getters e setters
+
 
     public Long getId() {
         return id;
