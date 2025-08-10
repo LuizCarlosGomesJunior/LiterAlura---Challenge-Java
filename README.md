@@ -30,19 +30,18 @@ Projeto desenvolvido como parte do **Challenge Back‑End Java da Alura**. A apl
 
 ##  Estrutura do projeto
 
+```bash
 literalura/
 ├── src/
-
-│ ├── main/
-
-│ │ ├── java/br/com/alura/literalura/
-
-│ │ │ ├── model/ # Entidades JPA: Livro, Autor
-│ │ │ ├── dto/ # DTOs: ResultadoBusca, LivroDto, AutorDto
-│ │ │ ├── repository/ # Repositórios JPA
-│ │ │ ├── service/ # Consumo API + Conversão JSON
-│ │ │ ├── principal/ # Classe com o menu interativo
-│ │ │ └── LiteraluraApplication.java # Spring Boot Startup
-│ │ └── resources/
-│ │ └── application.properties # Configuração PostgreSQL
-└── pom.xml
+│   └── main/
+│       ├── java/
+│       │   └── br/com/alura/literalura/
+│       │       ├── model/         # Entidades JPA: Livro, Autor
+│       │       ├── dto/           # DTOs: ResultadoBusca, LivroDto, AutorDto
+│       │       ├── repository/    # Interfaces dos repositórios JPA
+│       │       ├── service/       # Consumo da API Gutendex + conversão de dados
+│       │       ├── principal/     # Menu interativo (classe Principal)
+│       │       └── LiteraluraApplication.java  # Classe principal do Spring Boot
+│       └── resources/
+│           └── application.properties  # Configuração do PostgreSQL
+└── pom.xml                            # Gerenciador de dependências Maven
