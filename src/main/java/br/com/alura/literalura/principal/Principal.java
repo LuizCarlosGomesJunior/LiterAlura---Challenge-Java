@@ -1,10 +1,17 @@
 package br.com.alura.literalura.principal;
 
+import br.com.alura.literalura.service.ConsumoApi;
+import br.com.alura.literalura.service.ConverteDados;
+
 import java.util.Scanner;
 
 public class Principal {
 
     private Scanner leitura = new Scanner(System.in);
+    ConsumoApi consumoApi = new ConsumoApi();
+    private ConverteDados conversor = new ConverteDados();
+    private final String ENDERECO = "https://gutendex.com/books/?search=";
+
 
     public void exibeMenu() {
         var opcao = -1;
@@ -65,5 +72,8 @@ public class Principal {
     }
 
     private void buscarLivroPeloTitulo() {
+        var livro = leitura.nextLine();
+        var json = consumoApi.obterDados(ENDERECO + livro.replace(" ", "+"));
+
     }
 }
