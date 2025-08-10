@@ -32,8 +32,11 @@ Projeto desenvolvido como parte do **Challenge Back‑End Java da Alura**. A apl
 
 literalura/
 ├── src/
+
 │ ├── main/
+
 │ │ ├── java/br/com/alura/literalura/
+
 │ │ │ ├── model/ # Entidades JPA: Livro, Autor
 │ │ │ ├── dto/ # DTOs: ResultadoBusca, LivroDto, AutorDto
 │ │ │ ├── repository/ # Repositórios JPA
